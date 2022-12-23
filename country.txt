@@ -1,0 +1,12 @@
+---select country---
+Nepal
+India
+Pakistan
+Usa
+Europe
+Russia
+France
+Argentina
+Afganistan
+London
+Paris

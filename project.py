@@ -65,6 +65,7 @@ def insert_record():
 
     if register_pwd.get() != pwd_again.get():
         warn = "Passwords didn't match!"
+            
     else:
         check_counter += 1
 
@@ -126,7 +127,7 @@ var.set('male')
 
 countries = []
 variable = StringVar()
-world = open('p.txt', 'r')
+world = open('country.txt', 'r')
 for country in world:
     country = country.rstrip('\n')
     countries.append(country)
@@ -275,15 +276,7 @@ female_rb = Radiobutton(
   
 )
 
-others_rb = Radiobutton(
-    gender_frame,
-    text='Others',
-    bg='#CCCCCC',
-    variable=var,
-    value='others',
-    font=('Times', 10)
-   
-)
+
 
 register_country = OptionMenu(
     right_frame, 
@@ -330,7 +323,7 @@ right_frame.place(x=500, y=50)
 gender_frame.grid(row=3, column=1, pady=10, padx=20)
 male_rb.pack(expand=True, side=LEFT)
 female_rb.pack(expand=True, side=LEFT)
-others_rb.pack(expand=True, side=LEFT)
+# others_rb.pack(expand=True, side=LEFT)
 
 email_tf.grid(row=0, column=1, pady=10, padx=20)
 pwd_tf.grid(row=1, column=1, pady=10, padx=20)

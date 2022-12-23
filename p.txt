@@ -1,9 +1,0 @@
----select country---
-nepal
-india
-pakistan
-usa
-europe
-russia
-france
-argentina
